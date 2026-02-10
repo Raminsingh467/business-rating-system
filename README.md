@@ -4,7 +4,7 @@ A web-based Business Listing & Rating System developed using Core PHP, MySQL, jQ
 
 This application allows users to manage businesses and provide ratings with real-time average updates.
 
-------------------------------------
+=========================================================================================================================
 
 ## 📌 Features
 
@@ -162,7 +162,7 @@ http://localhost/business_rating_system
 
 **Ramin Singh**  
 B.Tech Computer Science & Engineering  
-Fresher Software Developer
+ Software/Web Developer
 
 ## 📄 License
 
