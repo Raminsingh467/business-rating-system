@@ -1,0 +1,42 @@
+
+CREATE DATABASE IF NOT EXISTS business_rating;
+USE business_rating;
+
+DROP TABLE IF EXISTS businesses;
+
+CREATE TABLE businesses (
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(255) NOT NULL,
+address TEXT,
+phone VARCHAR(20),
+email VARCHAR(100),
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
+
+
+
+
+
+DROP TABLE IF EXISTS ratings;
+
+CREATE TABLE ratings (
+id INT AUTO_INCREMENT PRIMARY KEY,
+business_id INT NOT NULL,
+name VARCHAR(100),
+email VARCHAR(100),
+phone VARCHAR(20),
+rating FLOAT(2,1) DEFAULT 0,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+
+CONSTRAINT fk_business_rating
+FOREIGN KEY (business_id)
+REFERENCES businesses(id)
+ON DELETE CASCADE
+
+
+) ENGINE=InnoDB;
+
+
+
+
