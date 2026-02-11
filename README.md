@@ -1,4 +1,4 @@
-# 🏢 Business Listing & Rating System
+# Business Listing & Rating System
 
 A web-based Business Listing & Rating System developed using Core PHP, MySQL, jQuery, AJAX, and Bootstrap.
 
@@ -6,33 +6,33 @@ This application allows users to manage businesses and provide ratings with real
 
 ===============================================================
 
-## 📌 Features
+## Features
 
-### 1️⃣ Business Management
+### 1 Business Management
 - Add new business listings
 - Update existing business details
 - Delete business records
 - View all businesses in tabular format
 
-### 2️⃣ Rating System
+### 2 Rating System
 - Rate businesses using star ratings
 - Rating scale: 1–5 stars
 - Multiple users can rate the same business
 - Existing users can update their rating
 
-### 3️⃣ Rating Logic
+### 3 Rating Logic
 - If Email OR Phone already exists for a business → Rating updated
 - If new user → Rating inserted
 - Prevents duplicate ratings from same user
 
-### 4️⃣ Real-Time Updates
+### 4 Real-Time Updates
 - Average rating recalculated instantly
 - Business table updates without page refresh
 - AJAX-based operations
 
 ------------------------------------
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology | Usage |
 
@@ -45,23 +45,12 @@ This application allows users to manage businesses and provide ratings with real
 
 -----------------------------------
 
-## 📂 Project Structure
+## Project Structure
 
 business-rating-system/
-│
-├── index.php
-├── db.php
-├── add_business.php
-├── update_business.php
-├── delete_business.php
-├── fetch_business.php
-├── submit_rating.php
-│
-├── database.sql
-│
-└── assets/
+(index.php | db.php | add_business.php | update_business.php | delete_business.php | fetch_business.php | submit_rating.php | database.sql | assets/)
 
-## 🗄️ Database Structure
+## Database Structure
 
 ### businesses
 - id (Primary Key)
@@ -82,7 +71,7 @@ business-rating-system/
 
 ---------------------------------------
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### Step 1 — Clone Repository
 
@@ -117,8 +106,8 @@ database.sql
 
 Start from XAMPP:
 
-- Apache ✔️  
-- MySQL ✔️  
+- Apache 
+- MySQL   
 
 ---------------------------------------
 
@@ -128,7 +117,7 @@ Open browser:
 
 http://localhost/business_rating_system
 
-## 🧪 Functional Flow
+## Functional Flow
 
 ### Add Business
 1. Click “Add Business”
@@ -152,19 +141,19 @@ http://localhost/business_rating_system
 
 ---------------------------------------
 
-## 🔄 Real-Time Behavior
+## Real-Time Behavior
 
 - No page refresh
 - Ratings update instantly
 - Average recalculated dynamically
 
-## 👨‍💻 Author
+## Author
 
-**Ramin Singh**  
+  Ramin Singh   
 B.Tech Computer Science & Engineering  
  Software/Web Developer
 
-## 📄 License
+## License
 
 This project is created for learning and machine test purposes.
 
