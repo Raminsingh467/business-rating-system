@@ -4,7 +4,7 @@ A web-based Business Listing & Rating System developed using Core PHP, MySQL, jQ
 
 This application allows users to manage businesses and provide ratings with real-time average updates.
 
-===============================================================
+----------------------------------------------------------------
 
 ## Features
 
