@@ -1,10 +1,11 @@
+
 <?php
 include 'db.php';
 
 $sql = "SELECT b.*,
 IFNULL(AVG(r.rating),0) as avg_rating
 FROM businesses b
-LEFT JOIN ratings r
+ JOIN ratings r
 ON b.id = r.business_id
 GROUP BY b.id";
 
@@ -22,17 +23,37 @@ while($row = $result->fetch_assoc()){
 <td>
 
 <?php
-$avg = round($row['avg_rating']);
+$avg = floor($row['avg_rating']);
+$remain = ($row['avg_rating'])-$avg;
+
+$flag=0;
+
+if($remain >= 0.1 && $remain <= 0.9){
+    $flag =1;
+}
+
+
+
+$l=1;
 
 for($i=1; $i<=5; $i++){
 
 if($i <= $avg){
-echo "<span style='color:gold;'>★</span>";
-}else{
-echo "<span style='color:gray;'>★</span>";
+echo "<img src='star-on.png'>";
+$l++;
 }
 
+
 }
+if($flag ==1){
+echo "<img src='star-half.png'>";
+$l++;
+}
+
+for($i=$l;$i<=5;$i++){
+echo "<img src='star-off.png'>";
+}
+
 ?>
 
 <br>
