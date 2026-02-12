@@ -5,7 +5,7 @@ include 'db.php';
 $sql = "SELECT b.*,
 IFNULL(AVG(r.rating),0) as avg_rating
 FROM businesses b
- JOIN ratings r
+LEFT JOIN ratings r
 ON b.id = r.business_id
 GROUP BY b.id";
 
